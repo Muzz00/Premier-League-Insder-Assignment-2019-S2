@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Premier League</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        var list = new Array();
+        list[0] = 'images/Chelsea.jpg';
+        list[1] = 'images/AgueroSilva.jpg';
+        list[2] = 'images/Son.jpg'
+
+        var j = 0;
+
+        function rotate() {
+            document.getElementById("slide").src = list[j];
+            j = (j + 1) % list.length;
+            setTimeout("rotate()", 3000);
+        }
+    </script>
+</head>
+
+<body onload="rotate();" class="body story">
+    <header>
+        <ul class="premheader">
+            <li><img src="images/Premier%20League%20icon.png" alt="Premier League Icon"></li>
+            <li>
+                <h1>The Premier League Insider</h1>
+            </li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="storyIntro.html">Premier League</a></li>
+            <li><a href="titleRace.html">Title Race</a></li>
+            <li><a href="championsLeagueSpot.html" class="active">Champions League Spot</a></li>
+            <li><a href="relegationContenders.html">Relegation Contenders</a></li>
+            <li><a href="navigation.html">Navigation</a></li>
+            <li><a href="visualdesign.html">Visual Design</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="uapage.html">Usability & Accessibility</a></li>
+            <li><a href="copyright.html">Copyright</a></li>
+            <li><a href="technique.html">Technique</a></li>
+            <li><a href="maori.html">Maori</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container1" style="background-image: url(images/Spursleft.jpg)">
+        <div class="info">
+            <br>
+            <br>
+            <h2>Champions League Spots</h2>
+            <br>
+            <br>
+            <p>Having concluded that Manchester City and Liverpool FC will secure the top two spots;
+                There are only another 2 spots which are being battled out between various clubs.
+            </p>
+            <br>
+            <p>Before the transfer market opened it was mind boggling to predict the 3rd and 4th
+                places finishes. With Tottenham and Arsenal able to secure lucrative deals, it is
+                easy to conclude that both Manchester United and Chelsea will be missing out on the
+                Chapions League qualification spots.
+            </p>
+            <br>
+            <p>Many have tipped Leicester to be the dark horses to be in contention for the Top 4
+                spots. This is because Leicester City has seen a meteoric rise since they won the
+                Premier League in the 2015-2016 season.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <br>
+        <h1>Why it's important</h1>
+        <br>
+        <br>
+        <p>UEFA gurantees spots for the Champions League for the teams that finish between 1-4 in the
+            premier league.
+        </p>
+        <br>
+        <p>It is important for clubs to secure Champions League Spots as it means more revenue are
+            being generated for those respective clubs. This is because clubs will have more
+            viewership, hence increasing bonuses for the clubs such as TV rights deal and a
+            prize money worth of how far the club goes in the competition.
+        </p>
+        <br>
+        <p>Accurate as of 14 October 2019.</p>
+    </div>
+
+    <div class="image-container">
+        <img class="shape-img" src="images/Chelsea.jpg" alt="Image of Chelsea" id="slide" />
+    </div>
+
+    <div class="icon">
+        <a href="titleRace.html" class="previous round">&#8249;</a>
+        <a href="relegationContenders.html" class="next round">&#8250;</a>
+    </div>
+
+
+    <footer>
+        <p>&copy; Mohamed Muzzammil P A (2019)</p>
+    </footer>
+</body>
+
+</html>
